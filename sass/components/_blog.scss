@@ -10,6 +10,11 @@
     flex-wrap: wrap;
     font-size: 1.6rem;
 
+    @include respond(phone) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
     border-top: 1px solid $color-grey-light-2;
     border-bottom: 1px solid $color-grey-light-2;
     padding: 2.4rem 0;
@@ -45,7 +50,17 @@
   &__recommended {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
     &__imagebox {
+      margin-right: auto;
+
+      @include respond(phone) {
+        margin-right: 0;
+      }
     }
     &__img {
       width: 4.8rem;
@@ -54,10 +69,17 @@
       margin-right: -2.4rem;
       border: 5px solid #fff;
     }
+
+    &____textbox {
+    }
+
     &__text {
       margin-left: auto;
       font-size: 1.4rem;
       color: $color-grey-dark-2;
+
+      @include respond(phone) {
+      }
     }
   }
 }

@@ -3,7 +3,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem;
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__logobox {
+    @include respond(phone) {
+      margin-left: auto;
+    }
   }
 
   &__logo {
@@ -14,6 +23,13 @@
   &__searchbox {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      order: 2;
+      width: 80%;
+      margin: 1.2rem 0;
+      justify-content: center;
+    }
   }
 
   &__input {
@@ -25,6 +41,14 @@
     transition: all 0.2s;
     background-color: $color-grey-light-2;
 
+    @include respond(tab-port) {
+      width: 30rem;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+
     &::placeholder {
       color: $color-grey-light-4;
     }
@@ -32,6 +56,14 @@
     &:focus {
       outline: none;
       width: 50rem;
+
+      @include respond(tab-port) {
+        width: 35rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
   }
 
@@ -46,6 +78,10 @@
     display: flex;
     align-items: center;
     gap: 2.4rem;
+
+    @include respond(phone) {
+      margin-right: auto;
+    }
   }
 
   &__bookmark,

@@ -3,6 +3,14 @@ html {
   font-family: "Vazir", sans-serif;
   line-height: 1.6;
   color: $color-grey-dark-1;
+
+  @include respond(tab-port) {
+    font-size: 56.25%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 .paragraph {
