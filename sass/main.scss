@@ -2,22 +2,24 @@
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
-@import "vendors/bootstrap";
-@import "vendors/jquery-ui";
-
+@import "base/animations";
+@import "base/base";
 @import "base/reset";
 @import "base/typography";
+@import "base/fonts";
+@import "base/utilities";
 
-@import "layout/navigation";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/forms";
-
+@import "components/blog";
 @import "components/buttons";
 @import "components/carousel";
+@import "components/gallery";
+@import "components/header";
+@import "components/hotelinfo";
+@import "components/navigation";
 @import "components/slider";
+@import "components/testimonials";
+
+@import "layout/grid";
 
 @import "pages/home";
 @import "pages/about";
@@ -25,3 +27,6 @@
 
 @import "themes/theme";
 @import "themes/admin";
+
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";

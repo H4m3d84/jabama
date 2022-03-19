@@ -1,0 +1,51 @@
+.hotelinfo {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.4rem;
+
+  &__hotelbox {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  &__header {
+  }
+  &__starbox {
+    line-height: 0;
+  }
+  &__staricon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-primary;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  &__locationicon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-primary;
+  }
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-primary;
+    padding: 0.8rem 3.2rem;
+    color: #fff;
+  }
+  &__number {
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  &__votes {
+    font-size: 1.2rem;
+  }
+}

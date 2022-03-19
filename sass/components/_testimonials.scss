@@ -1,0 +1,61 @@
+.testimonials {
+  flex: 0 1 33.334%;
+  margin: 4.8rem;
+  margin-right: 0;
+
+  &__item {
+    background-color: #fff;
+    padding: 2.4rem;
+  }
+  &__quote {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  &__userbox {
+    display: flex;
+    align-items: center;
+
+    &__img {
+      width: 6.4rem;
+      height: 6.4rem;
+      border-radius: 50%;
+      margin-left: 1.2rem;
+    }
+    &__userdata {
+      display: flex;
+      flex-direction: column;
+    }
+    &__username {
+      font-size: 1.4rem;
+    }
+    &__join {
+      color: $color-grey-dark-2;
+    }
+    &__rating {
+      margin-right: auto;
+      font-size: 2rem;
+      font-weight: 900;
+      color: $color-primary;
+    }
+  }
+
+  &__btnbox {
+    text-align: center;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+
+    span {
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-grey-dark-2;
+
+      span {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}

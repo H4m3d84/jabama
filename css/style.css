@@ -1,3 +1,527 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  background-color: #eb2f64;
+}
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Vazir", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("/fonts/Vazir-light.eot");
+  src: url("/fonts/Vazir-light.eot?#iefix") format("/fonts/Vazir-light-opentype"), url("/fonts/Vazir-light.woff") format("woff"), url("/fonts/Vazir-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url("/fonts/Vazir-Bold.eot");
+  src: url("/fonts/Vazir-Bold.eot?#iefix") format("/fonts/Vazir-Bold-opentype"), url("/fonts/Vazir-Bold.woff") format("woff"), url("/fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-medium;
+  src: url("/fonts/Vazir-Medium.eot");
+  src: url("/fonts/Vazir-Medium.eot?#iefix") format("/fonts/Vazir-Medium-opentype"), url("/fonts/Vazir-Medium.woff") format("woff"), url("/fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-thin;
+  src: url("/fonts/Vazir-Thin.eot");
+  src: url("/fonts/Vazir-Thin.eot?#iefix") format("/fonts/Vazir-Thin-opentype"), url("/fonts/Vazir-Thin.woff") format("woff"), url("/fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir;
+  src: url("/fonts/Vazir-light-FD.eot");
+  src: url("/fonts/Vazir-light-FD.eot?#iefix") format("/fonts/Vazir-light-FD-opentype"), url("/fonts/Vazir-light-FD.woff") format("woff"), url("/fonts/Vazir-light-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url("/fonts/Vazir-Bold-FD.eot");
+  src: url("/fonts/Vazir-Bold-FD.eot?#iefix") format("/fonts/Vazir-Bold-FD-opentype"), url("/fonts/Vazir-Bold-FD.woff") format("woff"), url("/fonts/Vazir-Bold-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-medium;
+  src: url("/fonts/Vazir-Medium-FD.eot");
+  src: url("/fonts/Vazir-Medium-FD.eot?#iefix") format("/fonts/Vazir-Medium-FD-opentype"), url("/fonts/Vazir-Medium-FD.woff") format("woff"), url("/fonts/Vazir-Medium-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-thin;
+  src: url("/fonts/Vazir-Thin-FD.eot");
+  src: url("/fonts/Vazir-Thin-FD.eot?#iefix") format("/fonts/Vazir-Thin-FD-opentype"), url("/fonts/Vazir-Thin-FD.woff") format("woff"), url("/fonts/Vazir-Thin-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.u-margin-bottom-vs {
+  margin-bottom: 1.2rem;
+}
+
+.u-margin-bottom-s {
+  margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-m {
+  margin-bottom: 4.8rem;
+}
+
+.u-margin-bottom-l {
+  margin-bottom: 9.6rem;
+}
+
+.u-margin-bottom-vl {
+  margin-bottom: 12.8rem;
+}
+
+.u-margin-top-vs {
+  margin-top: 1.2rem;
+}
+
+.u-margin-top-s {
+  margin-top: 2.4rem;
+}
+
+.u-margin-top-m {
+  margin-top: 4.8rem;
+}
+
+.u-margin-top-l {
+  margin-top: 9.6rem;
+}
+
+.u-margin-top-vl {
+  margin-top: 12.8rem;
+}
+
+.u-margin-left-vs {
+  margin-left: 1.2rem;
+}
+
+.u-margin-left-s {
+  margin-left: 2.4rem;
+}
+
+.u-margin-left-m {
+  margin-left: 4.8rem;
+}
+
+.u-margin-left-l {
+  margin-left: 9.6rem;
+}
+
+.u-margin-left-vl {
+  margin-left: 12.8rem;
+}
+
+.u-margin-right-vs {
+  margin-right: 1.2rem;
+}
+
+.u-margin-right-s {
+  margin-right: 2.4rem;
+}
+
+.u-margin-right-m {
+  margin-right: 4.8rem;
+}
+
+.u-margin-right-l {
+  margin-right: 9.6rem;
+}
+
+.u-margin-right-vl {
+  margin-right: 12.8rem;
+}
+
+.blog {
+  flex: 0 1 66.666%;
+  background-color: #fff;
+  margin: 4.8rem;
+  padding: 2.4rem;
+}
+.blog__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  padding: 2.4rem 0;
+}
+.blog__item {
+  flex: 0 0 50%;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.blog__item:before {
+  content: "";
+  background-image: url("/imgs/SVG/chevron-thin-right.svg");
+  background-size: cover;
+  transform: scale(-1, 1);
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+@supports (-webkit-mask-image: url()) {
+  .blog__item:before {
+    background-color: #eb2f64;
+    -webkit-mask-image: url("/imgs/SVG/chevron-thin-right.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("/imgs/SVG/chevron-thin-right.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.blog__recommended {
+  display: flex;
+  align-items: center;
+}
+.blog__recommended__img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -2.4rem;
+  border: 5px solid #fff;
+}
+.blog__recommended__text {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.btn-inline {
+  border: none;
+  background-color: inherit;
+  color: #eb2f64;
+  font-family: "Vazir", sans-serif;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+}
+.btn-inline:focus {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.gallery {
+  display: flex;
+}
+.gallery__image {
+  width: 33.334%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+.header__logo {
+  height: 4.8rem;
+  transform: scale(-1, 1);
+}
+.header__searchbox {
+  display: flex;
+  align-items: center;
+}
+.header__input {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-family: "Vazir-Medium", sans-serif;
+  width: 40rem;
+  border-radius: 4.8rem;
+  transition: all 0.2s;
+  background-color: #f4f2f2;
+}
+.header__input::placeholder {
+  color: #ccc;
+}
+.header__input:focus {
+  outline: none;
+  width: 50rem;
+}
+.header__inputsvg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: -4rem;
+  fill: #999;
+}
+.header__userbox {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.header__bookmark, .header__chat {
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+}
+.header__bookmark span, .header__chat span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #eb2f64;
+  position: absolute;
+  top: -1rem;
+  right: 1.2rem;
+}
+.header__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #777;
+  transform: scale(-1, 1);
+}
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+.header__img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
+.header__username {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.hotelinfo {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.4rem;
+}
+.hotelinfo__hotelbox {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.hotelinfo__starbox {
+  line-height: 0;
+}
+.hotelinfo__staricon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #eb2f64;
+}
+.hotelinfo__details {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.hotelinfo__location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.hotelinfo__locationicon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #eb2f64;
+}
+.hotelinfo__rating {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #eb2f64;
+  padding: 0.8rem 3.2rem;
+  color: #fff;
+}
+.hotelinfo__number {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.hotelinfo__votes {
+  font-size: 1.2rem;
+}
+
+.navigation {
+  padding: 2.4rem 0;
+}
+.navigation__list {
+  font-size: 2.4rem;
+}
+.navigation__item {
+  list-style: none;
+}
+.navigation__item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.navigation__link {
+  display: flex;
+  align-items: center;
+}
+.navigation__link:link, .navigation__link:visited {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+.navigation__link:before {
+  content: "";
+  width: 1rem;
+  height: 100%;
+  background-color: #ff3366;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.2s 0.1s, width 0.2s 0.3s cubic-bezier(0.97, 0.05, 0.96, 0.32);
+  transform: scaleY(0);
+  z-index: -1;
+}
+.navigation__link:hover::before, .navigation__link:active::before, .navigation__link__active::before {
+  width: 100%;
+  transform: scaleY(1);
+}
+.navigation__link__icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #fff;
+  margin-left: 1.2rem;
+  transform: scale(-1, 1);
+}
+.navigation__legal {
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+}
+
+.testimonials {
+  flex: 0 1 33.334%;
+  margin: 4.8rem;
+  margin-right: 0;
+}
+.testimonials__item {
+  background-color: #fff;
+  padding: 2.4rem;
+}
+.testimonials__quote {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.testimonials__userbox {
+  display: flex;
+  align-items: center;
+}
+.testimonials__userbox__img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-left: 1.2rem;
+}
+.testimonials__userbox__userdata {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials__userbox__username {
+  font-size: 1.4rem;
+}
+.testimonials__userbox__join {
+  color: #777;
+}
+.testimonials__userbox__rating {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #eb2f64;
+}
+.testimonials__btnbox {
+  text-align: center;
+}
+.testimonials__btn {
+  font-size: 1.6rem;
+}
+.testimonials__btn span {
+  transition: all 0.2s;
+}
+.testimonials__btn:hover {
+  color: #777;
+}
+.testimonials__btn:hover span {
+  margin-left: 0.8rem;
+}
+
+.container {
+  max-width: 120rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background-color: #fff;
+}
+
+.content {
+  display: flex;
+  background-color: #faf9f9;
+}
+
+.navigation {
+  background-color: #333;
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 0 0 80%;
+}
+
+.maindata {
+  display: flex;
+  background-color: #f4f2f2;
+}
 
 /*# sourceMappingURL=style.css.map */

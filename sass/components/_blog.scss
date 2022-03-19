@@ -1,0 +1,63 @@
+.blog {
+  flex: 0 1 66.666%;
+  background-color: #fff;
+  margin: 4.8rem;
+  padding: 2.4rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+
+    border-top: 1px solid $color-grey-light-2;
+    border-bottom: 1px solid $color-grey-light-2;
+    padding: 2.4rem 0;
+  }
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "";
+      background-image: url("/imgs/SVG/chevron-thin-right.svg");
+      background-size: cover;
+
+      @supports (-webkit-mask-image: url() or -webkit-mask-size) {
+        background-color: $color-primary;
+        -webkit-mask-image: url("/imgs/SVG/chevron-thin-right.svg");
+        -webkit-mask-size: cover;
+        mask-image: url("/imgs/SVG/chevron-thin-right.svg");
+        mask-size: cover;
+        background-image: none;
+      }
+
+      transform: scale(-1, 1);
+      width: 1.6rem;
+      height: 1.6rem;
+      display: inline-block;
+      margin-left: 0.8rem;
+    }
+  }
+
+  &__recommended {
+    display: flex;
+    align-items: center;
+    &__imagebox {
+    }
+    &__img {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%;
+      margin-right: -2.4rem;
+      border: 5px solid #fff;
+    }
+    &__text {
+      margin-left: auto;
+      font-size: 1.4rem;
+      color: $color-grey-dark-2;
+    }
+  }
+}

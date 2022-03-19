@@ -1,10 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>جاباما</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logobox">
+          <img src="./imgs/logo.png" alt="logo" class="header__logo" />
+        </div>
+        <form action="#" class="header__searchbox">
+          <input
+            type="text"
+            class="header__input"
+            placeholder="جستجوی هتل ها"
+          />
+          <svg class="header__inputsvg">
+            <use xlink:href="/imgs/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </form>
+        <div class="header__userbox">
+          <div class="header__bookmark">
+            <svg class="header__icon">
+              <use xlink:href="imgs/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span>7</span>
+          </div>
+
+          <div class="header__chat">
+            <svg class="header__icon">
+              <use xlink:href="imgs/sprite.svg#icon-chat"></use>
+            </svg>
+            <span>13</span>
+          </div>
+
+          <div class="header__user">
+            <img src="./imgs/user.jpg" alt="jonas image" class="header__img" />
+            <p class="header__username">جوناس</p>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link__active">
+                <svg class="navigation__link__icon">
+                  <use xlink:href="imgs/sprite.svg#icon-home"></use>
+                </svg>
+                <span>هتل</span>
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <svg class="navigation__link__icon">
+                  <use
+                    xlink:href="imgs/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span>پرواز</span>
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <svg class="navigation__link__icon">
+                  <use xlink:href="imgs/sprite.svg#icon-key"></use>
+                </svg>
+                <span>اجاره خودرو</span>
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <svg class="navigation__link__icon">
+                  <use xlink:href="imgs/sprite.svg#icon-map"></use>
+                </svg>
+                <span>تورها</span>
+              </a>
+            </li>
+          </ul>
+          <p class="navigation__legal">
+            &copy; 2021 توسط حامد شرفی. همه حقوق محفوظ است
+          </p>
+        </nav>
+        <main class="main">
+          <div class="gallery">
+            <img
+              src="./imgs/hotel-1.jpg"
+              alt="hotel 1"
+              class="gallery__image"
+            />
+            <img
+              src="./imgs/hotel-2.jpg"
+              alt="hotel 2"
+              class="gallery__image"
+            />
+            <img
+              src="./imgs/hotel-3.jpg"
+              alt="hotel 3"
+              class="gallery__image"
+            />
+          </div>
+          <div class="hotelinfo">
+            <div class="hotelinfo__hotelbox">
+              <h1 class="hotelinfo__header">هتل لاس پالماس</h1>
+              <div class="hotelinfo__starbox">
+                <svg class="hotelinfo__staricon">
+                  <use xlink:href="imgs/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotelinfo__staricon">
+                  <use xlink:href="imgs/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotelinfo__staricon">
+                  <use xlink:href="imgs/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotelinfo__staricon">
+                  <use xlink:href="imgs/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotelinfo__staricon">
+                  <use xlink:href="imgs/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="hotelinfo__details">
+              <div class="hotelinfo__location">
+                <svg class="hotelinfo__locationicon">
+                  <use xlink:href="imgs/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="btn-inline">البوفیرا، پرتقال</button>
+              </div>
+              <p class="hotelinfo__rating">
+                <span class="hotelinfo__number">8.6</span>
+                <span class="hotelinfo__votes">429 رای</span>
+              </p>
+            </div>
+          </div>
+          <div class="maindata">
+            <div class="blog">
+              <p class="paragraph u-margin-bottom-s">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد.
+              </p>
+              <p class="paragraph u-margin-bottom-s">
+                تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
+                این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <ul class="blog__list u-margin-bottom-s">
+                <li class="blog__item">نزدیک به ساحل</li>
+                <li class="blog__item">همراه صبحانه</li>
+                <li class="blog__item">حمل و نقل فرودگاهی رایگان</li>
+                <li class="blog__item">اینترنت رایگان در همه اتاق ها</li>
+                <li class="blog__item">سیستم تهویه هوا</li>
+                <li class="blog__item">حیوانات خانگی مجاز است</li>
+                <li class="blog__item">با همه زبان ها صحبت میکنیم</li>
+                <li class="blog__item">مناسب برای خانواده ها</li>
+              </ul>
+
+              <div class="blog__recommended">
+                <p class="blog__recommended__text">
+                  لوسی و 3 نفر از دوستانش این هتل را پیشنهاد داده اند
+                </p>
+                <div class="blog__recommended__imagebox">
+                  <img
+                    src="./imgs/user-1.jpg"
+                    alt="user 1 image"
+                    class="blog__recommended__img"
+                  />
+                  <img
+                    src="./imgs/user-2.jpg"
+                    alt="user 2 image"
+                    class="blog__recommended__img"
+                  />
+                  <img
+                    src="./imgs/user-3.jpg"
+                    alt="user 3 image"
+                    class="blog__recommended__img"
+                  />
+                  <img
+                    src="./imgs/user-4.jpg"
+                    alt="user 4 image"
+                    class="blog__recommended__img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials">
+              <figure class="testimonials__item u-margin-bottom-m">
+                <blockquote class="testimonials__quote">
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </blockquote>
+                <figcaption class="testimonials__userbox">
+                  <img
+                    src="./imgs/user-5.jpg"
+                    alt="user 5 image"
+                    class="testimonials__userbox__img"
+                  />
+                  <div class="testimonials__userbox__userdata">
+                    <p class="testimonials__userbox__username">نیک اسمیت</p>
+                    <div class="testimonials__userbox__join">23 فبریه 2017</div>
+                  </div>
+                  <p class="testimonials__userbox__rating">7.8</p>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonials__item u-margin-bottom-m">
+                <blockquote class="testimonials__quote">
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </blockquote>
+                <figcaption class="testimonials__userbox">
+                  <img
+                    src="./imgs/user-6.jpg"
+                    alt="user 5 image"
+                    class="testimonials__userbox__img"
+                  />
+                  <div class="testimonials__userbox__userdata">
+                    <p class="testimonials__userbox__username">ماری توماس</p>
+                    <div class="testimonials__userbox__join">
+                      13 سپتامبر 2017
+                    </div>
+                  </div>
+                  <p class="testimonials__userbox__rating">9.3</p>
+                </figcaption>
+              </figure>
+              <div class="testimonials__btnbox">
+                <button class="btn-inline testimonials__btn">
+                  <span>نمایش همه</span> &larr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>

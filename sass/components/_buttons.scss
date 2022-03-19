@@ -1,0 +1,14 @@
+.btn-inline {
+  border: none;
+  background-color: inherit;
+  color: $color-primary;
+  font-family: "Vazir", sans-serif;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+
+  &:focus {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}

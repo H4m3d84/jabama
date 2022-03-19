@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  &__logobox {
+  }
+
+  &__logo {
+    height: 4.8rem;
+    transform: scale(-1, 1);
+  }
+
+  &__searchbox {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-family: "Vazir-Medium", sans-serif;
+    width: 40rem;
+    border-radius: 4.8rem;
+    transition: all 0.2s;
+    background-color: $color-grey-light-2;
+
+    &::placeholder {
+      color: $color-grey-light-4;
+    }
+
+    &:focus {
+      outline: none;
+      width: 50rem;
+    }
+  }
+
+  &__inputsvg {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: -4rem;
+    fill: $color-grey-dark-3;
+  }
+
+  &__userbox {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__bookmark,
+  &__chat {
+    position: relative;
+    line-height: 0;
+    cursor: pointer;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      color: #fff;
+      background-color: $color-primary;
+      position: absolute;
+      top: -1rem;
+      right: 1.2rem;
+    }
+  }
+
+  &__bookmark {
+  }
+
+  &__chat {
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-grey-dark-2;
+    transform: scale(-1, 1);
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+  }
+
+  &__username {
+    font-size: 1.4rem;
+    color: $color-grey-dark-2;
+  }
+}
